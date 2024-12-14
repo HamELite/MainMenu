@@ -56,13 +56,12 @@ public class MainMenu {
                         }
                     
                         private static void secretMenuWithCode(Scanner scanner) {
-                            final String uniqueCode = "7"; // Kode unik untuk mengakses menu rahasia
-                            System.out.println("Masukkan kode unik 1-10 untuk mengakses Menu Rahasia:");
+                            System.out.println("Masukkan kode unik 7-10 Angka untuk mengakses Menu Rahasia:");
                             scanner.nextLine(); // Konsumsi newline
                             String inputCode = scanner.nextLine();
                     
-                            if (!inputCode.equals(uniqueCode)) {
-                                System.out.println("Kode unik salah! Akses ditolak.");
+                            if (inputCode.length() < 7 || inputCode.length() > 10) {
+                                System.out.println("Kode unik salah! Panjang kode harus antara 7 hingga 10 karakter. Akses ditolak.");
                                 return;
                             }
                     
