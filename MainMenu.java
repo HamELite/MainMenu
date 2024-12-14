@@ -57,7 +57,7 @@ public class MainMenu {
                     
                         private static void secretMenuWithCode(Scanner scanner) {
                             System.out.println("Masukkan kode unik 7-10 Angka untuk mengakses Menu Rahasia:");
-                            scanner.nextLine(); // Konsumsi newline
+                            scanner.nextLine();
                             String inputCode = scanner.nextLine();
                     
                             if (inputCode.length() < 7 || inputCode.length() > 10) {
